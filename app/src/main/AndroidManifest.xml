@@ -13,8 +13,17 @@
         android:theme="@style/Theme.Page1"
         tools:targetApi="31">
         <activity
+            android:name=".lungheart"
+            android:exported="false" />
+        <activity
+            android:name=".lungsss"
+            android:exported="false" />
+        <activity
+            android:name=".heartani"
+            android:exported="false" />
+        <activity
             android:name=".splashscreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,9 +46,7 @@
             android:theme="@style/Theme.Page1" />
         <activity
             android:name=".devicelogin"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
