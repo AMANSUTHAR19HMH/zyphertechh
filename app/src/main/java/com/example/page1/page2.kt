@@ -1,6 +1,7 @@
 package com.example.page1
 
 import android.os.Bundle
+import android.view.WindowManager
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -18,6 +19,10 @@ class page2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_page2)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
 
            /* Glide.with(this).load("https://i.imgur.com/1tMFzp8.png")
                 .into(findViewById(R.id.rlhxd3u3x4qn))

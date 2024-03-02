@@ -23,20 +23,20 @@
         </activity>
         <activity
             android:name=".doctorlogin"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".devicelogin"
-            android:exported="false" />
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".patientdata"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".page2"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_page2"
             android:theme="@style/Theme.Page1" />
         <activity
-            android:name=".MainActivity"
+            android:name=".devicelogin"
             android:exported="true">
 
         </activity>
