@@ -7,16 +7,18 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ScrollView
-        android:fillViewport="true"
         android:id="@+id/rnwq5oisa429"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/sff000000sw1bffffffff"
-        android:paddingTop="19dp"
         android:clipChildren="false"
-        android:clipToPadding="false">
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingTop="19dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,35 +27,52 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/rzdbs0im91j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginBottom="38dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/rnept1v8x9b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="46dp"
                 android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="46dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="77dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/imm" />
 
                 <TextView
                     android:id="@+id/rcos59sqtg0j"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="ZYPHER TECH"
                     android:textColor="#364abc"
                     android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:text="ZYPHER TECH"
-                    android:layout_marginTop="50dp"
-                    android:gravity="center"
-                    />
+                    android:textStyle="bold" />
             </LinearLayout>
+
             <RelativeLayout
                 android:id="@+id/rhoy0yu2v6z"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="356dp"
                 android:clipChildren="false"
-                android:clipToPadding="false"
-                >
+                android:clipToPadding="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -82,12 +101,13 @@
                             android:orientation="vertical"
                             android:padding="15dp">
 
-                            <TextView
+                            <EditText
                                 android:id="@+id/rthul36dx93"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Bluetooth ID"
+                                android:hint="DOCTOR ID"
                                 android:textColor="#b9b9b9"
+                                android:textColorHint="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -102,42 +122,69 @@
                             android:paddingHorizontal="11dp"
                             android:paddingVertical="16dp">
 
-                            <TextView
+                            <EditText
                                 android:id="@+id/r54m23ozxek9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="MAC Address"
+                                android:hint="PASSWORD"
                                 android:textColor="#b9b9b9"
+                                android:textColorHint="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
+
                     </LinearLayout>
+
+                    <Button
+                        android:id="@+id/loginbtn"
+                        android:layout_width="236dp"
+                        android:layout_height="61dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#AFE4F4"
+                        android:text="LOGIN"
+                        android:textColor="#2312D5"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/rdky2fnjd3du"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginBottom="-22dp"
+                    android:background="@drawable/cr16lr270e3a1ebfb5e4c60cd"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:elevation="7dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="46dp">
+
+                </LinearLayout>
             </RelativeLayout>
+
             <LinearLayout
                 android:id="@+id/r2wztk3ayqk4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFffffff"
-                android:paddingHorizontal="124dp"
                 android:clipChildren="false"
                 android:clipToPadding="false"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingHorizontal="124dp">
+
                 <LinearLayout
                     android:id="@+id/rta038j963ti"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/cr100bff000000"
                     android:layout_marginTop="21dp"
+                    android:background="@drawable/cr100bff000000"
                     android:clipChildren="false"
                     android:clipToPadding="false"
-                    android:orientation="vertical">
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-
+                    android:orientation="vertical"></LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
