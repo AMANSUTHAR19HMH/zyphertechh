@@ -1,0 +1,444 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFFFF"
+    android:backgroundTint="#D5D9EF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="69dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="277dp"
+            android:src="@drawable/logggo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="zypher tech"
+            android:textAllCaps="true"
+            android:textColor="@color/heading"
+            android:textSize="37dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/search_view_shape"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search by Patient I'd"
+            android:searchIcon="@drawable/search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+        </SearchView>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="292dp"
+            android:text="Make a New Reading "
+            android:textColor="@color/spback"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="61dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/lungs"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toEndOf="@+id/lungs"
+            app:layout_constraintTop_toBottomOf="@id/heading" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="304dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/stethoscop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heading" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="46dp"
+            android:layout_height="22dp"
+            android:text=" Heart "
+            android:textColor="@color/spback"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="46dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="1dp"
+            android:text="  Both "
+            android:textColor="@color/spback"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/lungs"
+            app:layout_constraintStart_toStartOf="@+id/lungs"
+            app:layout_constraintTop_toBottomOf="@+id/lungs" />
+
+
+        <TextView
+            android:layout_width="61dp"
+            android:layout_height="24dp"
+            android:text="   Lungs "
+            android:textColor="@color/spback"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <ImageButton
+            android:id="@+id/lungs"
+            android:layout_width="58dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/both"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Most Recent"
+            android:id="@+id/most"
+            android:textColor="#2D47D4"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <HorizontalScrollView
+            android:fillViewport="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/hori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="46dp"
+            app:layout_constraintTop_toBottomOf="@id/most"
+            android:layout_marginHorizontal="14dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/rawqtikle746"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cr9bc9338ce3"
+                    android:paddingVertical="22dp"
+                    android:paddingHorizontal="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/rthikl8v7uyf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/r9sf8oxz17bf"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="7dp"
+                            android:src="@drawable/hearlogo"
+                            android:scaleType="fitXY"
+                            />
+                        <TextView
+                            android:id="@+id/rpm7bw7rype9"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="77 BPM"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/rg2c3m4tahut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="29dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/rt9alorvgwm"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="7dp"
+                            android:src="@drawable/lungslogo"
+                            android:scaleType="fitXY"
+                            />
+                        <TextView
+                            android:id="@+id/rtx9p6s2myz"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="100 BPM"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/r1eioyb8bsy6"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Amit Kumar"
+                        />
+                    <TextView
+                        android:id="@+id/r6qs2xskhml"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="35 yrs, Male"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/r9surjg1x65"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="#261BB9"
+                    android:paddingVertical="22dp"
+                    android:paddingHorizontal="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/rxcwx193gxe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/rjpgxqf9zdej"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="7dp"
+                            android:src="@drawable/hearlogo"
+                            android:scaleType="fitXY"
+                            />
+                        <TextView
+                            android:id="@+id/r0e0g6dfdle8"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="89 BPM"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/re7jv9eh5vm7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="29dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/rex2fmnlknop"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="7dp"
+                            android:src="@drawable/lungslogo"
+                            android:scaleType="fitXY"
+                            />
+                        <TextView
+                            android:id="@+id/rilhy9v237rp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="110 BPM"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/rzzkwsc4vln"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Kira Shah"
+                        />
+                    <TextView
+                        android:id="@+id/ri8ohw6vr0k"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="27 yrs, Female"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/rtcox8mqiyw"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cr9bff364abc"
+                    android:paddingVertical="22dp"
+                    android:paddingHorizontal="6dp"
+                    android:elevation="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/rws9yr3c4iup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/riajf4n9q4y"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="7dp"
+                            android:src="@drawable/hearlogo"
+                            android:scaleType="fitXY"
+                            />
+                        <TextView
+                            android:id="@+id/r2ihojzrrprl"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="74 BPM"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/rfclyd8umw2j"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="27dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/rllrtax1ocqb"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="7dp"
+                            android:src="@drawable/lungslogo"
+                            android:scaleType="fitXY"
+                            />
+                        <TextView
+                            android:id="@+id/rb8pii8ta5gw"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="129 BPM"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/r7pwehwwscn2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="3dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Karan"
+                        />
+                    <TextView
+                        android:id="@+id/riwoabwajjzs"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="19 yrs, Male"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>
