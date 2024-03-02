@@ -133,9 +133,10 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="15dp"
                         android:text="LOGIN"
-                        android:textColor="#ffffff"
+                        android:textColor="#2312D5"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:backgroundTint="#AFE4F4"/>
 
                 </LinearLayout>
 
