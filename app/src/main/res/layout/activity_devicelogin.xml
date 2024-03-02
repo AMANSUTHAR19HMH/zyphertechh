@@ -136,7 +136,7 @@
                     </LinearLayout>
 
                     <Button
-                        android:id="@+id/loginbtn"
+                        android:id="@+id/loginnnbtn"
                         android:layout_width="236dp"
                         android:layout_height="61dp"
                         android:layout_gravity="center_horizontal"
